@@ -1,0 +1,38 @@
+# 服务配置
+server:
+  port: 8080
+
+# bot登录信息， 目前就一个 后面可以改造成多个
+login-info:
+  qq-code: 1477485012
+  password: cy19960823
+
+# 管理员信息
+admin:
+  id: 1056413436
+
+# 指令信息
+help:
+  command:
+    - "指令说明\n"
+    - "(${}代表占位符，可以输入相应的文字)\n"
+    - "1. #帮助 <查询帮助信息>\n"
+    - "2. 来点${标签}色图 <随机获取一张P站的相关标签图片>\n"
+    - "2. 有人发${替换1}你回${替换2} <自定义回复>\n"
+
+white-group:
+
+
+#redis 配置文件
+spring:
+  redis:
+    host: 192.168.46.129
+    port: 6379
+    database: 0
+    timeout: 1800000    # 超时 ms
+    lettuce:
+      pool:
+        max-active: 20  # 最大连接数
+        max-wait: -1    # 阻塞等待时间
+        max-idle: 5     # 最大空闲连接
+        min-idle: 0     # 最小控线连接
