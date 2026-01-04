@@ -4,8 +4,8 @@ server:
 
 # bot登录信息， 目前就一个 后面可以改造成多个
 login-info:
-  qq-code: 1477485012
-  password: cy19960823
+  qq-code: 
+  password: 
 
 # 管理员信息
 admin:
